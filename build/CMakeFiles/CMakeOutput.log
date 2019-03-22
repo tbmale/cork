@@ -1,0 +1,665 @@
+The system is: Windows - 6.1.7601 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/util/msys32/mingw32/bin/clang.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is Clang, found in "C:/_work/cork/build/CMakeFiles/3.12.4/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/util/msys32/mingw32/bin/clang++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is Clang, found in "C:/_work/cork/build/CMakeFiles/3.12.4/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_b0648/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0648.dir/build.make CMakeFiles/cmTC_b0648.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0648.dir/testCCompiler.c.obj
+/C/util/msys32/mingw32/bin/clang.exe    -o CMakeFiles/cmTC_b0648.dir/testCCompiler.c.obj   -c /C/_work/cork/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b0648.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_b0648.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_b0648.dir/objects.a "CMakeFiles/cmTC_b0648.dir/testCCompiler.c.obj" 
+/C/util/msys32/mingw32/bin/clang.exe      -Wl,--whole-archive CMakeFiles/cmTC_b0648.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b0648.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_281c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_281c2.dir/build.make CMakeFiles/cmTC_281c2.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj
+/C/util/msys32/mingw32/bin/clang.exe    -o CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj   -c /C/util/msys32/mingw32/share/cmake-3.12/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_281c2.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_281c2.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_281c2.dir/objects.a "CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj" 
+/C/util/msys32/mingw32/bin/clang.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_281c2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_281c2.exe -Wl,--major-image-version,0,--minor-image-version,0 
+clang version 7.0.0 (tags/RELEASE_700/final)
+Target: i686-w64-windows-gnu
+Thread model: posix
+InstalledDir: C:\util\msys32\mingw32\bin
+ "C:\\util\\msys32\\mingw32\\bin\\ld" -m i386pe -Bdynamic -o cmTC_281c2.exe "C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o" "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o" "-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib" --whole-archive CMakeFiles/cmTC_281c2.dir/objects.a --no-whole-archive --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o"
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_281c2/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_281c2.dir/build.make CMakeFiles/cmTC_281c2.dir/build]
+  ignore line: [make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/C/util/msys32/mingw32/bin/clang.exe    -o CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj   -c /C/util/msys32/mingw32/share/cmake-3.12/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_281c2.exe]
+  ignore line: [/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_281c2.dir/objects.a]
+  ignore line: [/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_281c2.dir/objects.a "CMakeFiles/cmTC_281c2.dir/CMakeCCompilerABI.c.obj" ]
+  ignore line: [/C/util/msys32/mingw32/bin/clang.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_281c2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_281c2.exe -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [clang version 7.0.0 (tags/RELEASE_700/final)]
+  ignore line: [Target: i686-w64-windows-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: C:\util\msys32\mingw32\bin]
+  link line: [ "C:\\util\\msys32\\mingw32\\bin\\ld" -m i386pe -Bdynamic -o cmTC_281c2.exe "C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o" "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o" "-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib" --whole-archive CMakeFiles/cmTC_281c2.dir/objects.a --no-whole-archive --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o"]
+    arg [C:\\util\\msys32\\mingw32\\bin\\ld] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_281c2.exe] ==> ignore
+    arg [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o] ==> ignore
+    arg [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o] ==> ignore
+    arg [-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0] ==> dir [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0]
+    arg [-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib] ==> dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib]
+    arg [-LC:\\util\\msys32\\mingw32\\lib] ==> dir [C:\\util\\msys32\\mingw32\\lib]
+    arg [-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib] ==> dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles/cmTC_281c2.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o] ==> ignore
+  remove lib [gcc_eh]
+  remove lib [msvcrt]
+  remove lib [gcc_eh]
+  remove lib [msvcrt]
+  collapse library dir [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0] ==> [C:/util/msys32/mingw32/lib/gcc/i686-w64-mingw32/7.3.0]
+  collapse library dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib] ==> [C:/util/msys32/mingw32/i686-w64-mingw32/lib]
+  collapse library dir [C:\\util\\msys32\\mingw32\\lib] ==> [C:/util/msys32/mingw32/lib]
+  collapse library dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib] ==> [C:/util/msys32/mingw32/i686-w64-mingw32/sys-root/mingw/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [C:/util/msys32/mingw32/lib/gcc/i686-w64-mingw32/7.3.0;C:/util/msys32/mingw32/i686-w64-mingw32/lib;C:/util/msys32/mingw32/lib;C:/util/msys32/mingw32/i686-w64-mingw32/sys-root/mingw/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_261da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_261da.dir/build.make CMakeFiles/cmTC_261da.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_261da.dir/feature_tests.c.obj
+/C/util/msys32/mingw32/bin/clang.exe   -std=c11 -o CMakeFiles/cmTC_261da.dir/feature_tests.c.obj   -c /C/_work/cork/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_261da.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_261da.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_261da.dir/objects.a "CMakeFiles/cmTC_261da.dir/feature_tests.c.obj" 
+/C/util/msys32/mingw32/bin/clang.exe      -Wl,--whole-archive CMakeFiles/cmTC_261da.dir/objects.a -Wl,--no-whole-archive  -o cmTC_261da.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_c9065/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9065.dir/build.make CMakeFiles/cmTC_c9065.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9065.dir/feature_tests.c.obj
+/C/util/msys32/mingw32/bin/clang.exe   -std=c99 -o CMakeFiles/cmTC_c9065.dir/feature_tests.c.obj   -c /C/_work/cork/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c9065.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_c9065.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_c9065.dir/objects.a "CMakeFiles/cmTC_c9065.dir/feature_tests.c.obj" 
+/C/util/msys32/mingw32/bin/clang.exe      -Wl,--whole-archive CMakeFiles/cmTC_c9065.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c9065.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_f9138/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f9138.dir/build.make CMakeFiles/cmTC_f9138.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9138.dir/feature_tests.c.obj
+/C/util/msys32/mingw32/bin/clang.exe   -std=c90 -o CMakeFiles/cmTC_f9138.dir/feature_tests.c.obj   -c /C/_work/cork/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_f9138.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_f9138.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_f9138.dir/objects.a "CMakeFiles/cmTC_f9138.dir/feature_tests.c.obj" 
+/C/util/msys32/mingw32/bin/clang.exe      -Wl,--whole-archive CMakeFiles/cmTC_f9138.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f9138.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_43ed3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43ed3.dir/build.make CMakeFiles/cmTC_43ed3.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43ed3.dir/testCXXCompiler.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe     -o CMakeFiles/cmTC_43ed3.dir/testCXXCompiler.cxx.obj -c /C/_work/cork/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_43ed3.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_43ed3.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_43ed3.dir/objects.a "CMakeFiles/cmTC_43ed3.dir/testCXXCompiler.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_43ed3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_43ed3.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_a44bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a44bd.dir/build.make CMakeFiles/cmTC_a44bd.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj
+/C/util/msys32/mingw32/bin/clang++.exe     -o CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj -c /C/util/msys32/mingw32/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_a44bd.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_a44bd.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_a44bd.dir/objects.a "CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_a44bd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a44bd.exe -Wl,--major-image-version,0,--minor-image-version,0 
+clang version 7.0.0 (tags/RELEASE_700/final)
+Target: i686-w64-windows-gnu
+Thread model: posix
+InstalledDir: C:\util\msys32\mingw32\bin
+ "C:\\util\\msys32\\mingw32\\bin\\ld" -m i386pe -Bdynamic -o cmTC_a44bd.exe "C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o" "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o" "-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib" --whole-archive CMakeFiles/cmTC_a44bd.dir/objects.a --no-whole-archive --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o"
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_a44bd/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a44bd.dir/build.make CMakeFiles/cmTC_a44bd.dir/build]
+  ignore line: [make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/C/util/msys32/mingw32/bin/clang++.exe     -o CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj -c /C/util/msys32/mingw32/share/cmake-3.12/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_a44bd.exe]
+  ignore line: [/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_a44bd.dir/objects.a]
+  ignore line: [/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_a44bd.dir/objects.a "CMakeFiles/cmTC_a44bd.dir/CMakeCXXCompilerABI.cpp.obj" ]
+  ignore line: [/C/util/msys32/mingw32/bin/clang++.exe     -v -Wl,--whole-archive CMakeFiles/cmTC_a44bd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a44bd.exe -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [clang version 7.0.0 (tags/RELEASE_700/final)]
+  ignore line: [Target: i686-w64-windows-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: C:\util\msys32\mingw32\bin]
+  link line: [ "C:\\util\\msys32\\mingw32\\bin\\ld" -m i386pe -Bdynamic -o cmTC_a44bd.exe "C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o" "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o" "-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\lib" "-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib" --whole-archive CMakeFiles/cmTC_a44bd.dir/objects.a --no-whole-archive --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt "C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o"]
+    arg [C:\\util\\msys32\\mingw32\\bin\\ld] ==> ignore
+    arg [-m] ==> ignore
+    arg [i386pe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a44bd.exe] ==> ignore
+    arg [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib\\crt2.o] ==> ignore
+    arg [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtbegin.o] ==> ignore
+    arg [-LC:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0] ==> dir [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0]
+    arg [-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib] ==> dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib]
+    arg [-LC:\\util\\msys32\\mingw32\\lib] ==> dir [C:\\util\\msys32\\mingw32\\lib]
+    arg [-LC:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib] ==> dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles/cmTC_a44bd.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0\\crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [C:\\util\\msys32\\mingw32\\lib\\gcc\\i686-w64-mingw32\\7.3.0] ==> [C:/util/msys32/mingw32/lib/gcc/i686-w64-mingw32/7.3.0]
+  collapse library dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32\\lib] ==> [C:/util/msys32/mingw32/i686-w64-mingw32/lib]
+  collapse library dir [C:\\util\\msys32\\mingw32\\lib] ==> [C:/util/msys32/mingw32/lib]
+  collapse library dir [C:\\util\\msys32\\mingw32\\i686-w64-mingw32/sys-root/mingw/lib] ==> [C:/util/msys32/mingw32/i686-w64-mingw32/sys-root/mingw/lib]
+  implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
+  implicit dirs: [C:/util/msys32/mingw32/lib/gcc/i686-w64-mingw32/7.3.0;C:/util/msys32/mingw32/i686-w64-mingw32/lib;C:/util/msys32/mingw32/lib;C:/util/msys32/mingw32/i686-w64-mingw32/sys-root/mingw/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++2a] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_0e2ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e2ce.dir/build.make CMakeFiles/cmTC_0e2ce.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0e2ce.dir/feature_tests.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe    -std=c++2a -o CMakeFiles/cmTC_0e2ce.dir/feature_tests.cxx.obj -c /C/_work/cork/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0e2ce.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_0e2ce.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_0e2ce.dir/objects.a "CMakeFiles/cmTC_0e2ce.dir/feature_tests.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_0e2ce.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0e2ce.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++17] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_e5fd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5fd6.dir/build.make CMakeFiles/cmTC_e5fd6.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e5fd6.dir/feature_tests.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe    -std=c++17 -o CMakeFiles/cmTC_e5fd6.dir/feature_tests.cxx.obj -c /C/_work/cork/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e5fd6.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_e5fd6.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_e5fd6.dir/objects.a "CMakeFiles/cmTC_e5fd6.dir/feature_tests.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_e5fd6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e5fd6.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_f90d0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f90d0.dir/build.make CMakeFiles/cmTC_f90d0.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f90d0.dir/feature_tests.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe    -std=c++14 -o CMakeFiles/cmTC_f90d0.dir/feature_tests.cxx.obj -c /C/_work/cork/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f90d0.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_f90d0.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_f90d0.dir/objects.a "CMakeFiles/cmTC_f90d0.dir/feature_tests.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_f90d0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f90d0.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_296db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_296db.dir/build.make CMakeFiles/cmTC_296db.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_296db.dir/feature_tests.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe    -std=c++11 -o CMakeFiles/cmTC_296db.dir/feature_tests.cxx.obj -c /C/_work/cork/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_296db.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_296db.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_296db.dir/objects.a "CMakeFiles/cmTC_296db.dir/feature_tests.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_296db.dir/objects.a -Wl,--no-whole-archive  -o cmTC_296db.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: C:/_work/cork/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/util/msys32/usr/bin/make.exe" "cmTC_3ad7d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ad7d.dir/build.make CMakeFiles/cmTC_3ad7d.dir/build
+make[1]: Entering directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ad7d.dir/feature_tests.cxx.obj
+/C/util/msys32/mingw32/bin/clang++.exe    -std=c++98 -o CMakeFiles/cmTC_3ad7d.dir/feature_tests.cxx.obj -c /C/_work/cork/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3ad7d.exe
+/C/util/msys32/mingw32/bin/cmake.exe -E remove -f CMakeFiles/cmTC_3ad7d.dir/objects.a
+/C/util/msys32/mingw32/bin/ar.exe cr CMakeFiles/cmTC_3ad7d.dir/objects.a "CMakeFiles/cmTC_3ad7d.dir/feature_tests.cxx.obj" 
+/C/util/msys32/mingw32/bin/clang++.exe      -Wl,--whole-archive CMakeFiles/cmTC_3ad7d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3ad7d.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+make[1]: Leaving directory '/c/_work/cork/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

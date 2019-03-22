@@ -173,7 +173,7 @@ debug: lib/lib$(LIB_TARGET_NAME)debug.a includes
 
 lib/lib$(LIB_TARGET_NAME).a: $(OBJ)
 	@echo "Bundling $@"
-	@ar rcs $@ $(OBJ)
+	@ar rcs $@ $(OBJ) libmpir.a
 
 lib/lib$(LIB_TARGET_NAME)debug.a: $(DEBUG)
 	@echo "Bundling $@"
@@ -181,7 +181,7 @@ lib/lib$(LIB_TARGET_NAME)debug.a: $(DEBUG)
 
 bin/cork: $(MAIN_OBJ)
 	@echo "Linking cork command line tool"
-	@$(CXX) -o bin/cork $(MAIN_OBJ) $(LINK)
+	@$(CXX) -o bin/cork $(MAIN_OBJ) -static -static-libgcc -static-libstdc++ -lpthread $(LINK)
 
 bin/off2obj: obj/off2obj.o
 	@echo "Linking off2obj"
