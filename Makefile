@@ -62,13 +62,13 @@ INC       := $(INC) $(GMPINC)
 # use the second line to disable profiling instrumentation
 # PROFILING := -pg
 PROFILING :=
-CCFLAGS   := -Wall $(INC) $(CONFIG) -O2 -DNDEBUG $(PROFILING)
+CCFLAGS   := -Wall $(INC) $(CONFIG) -O2 -DNDEBUG $(PROFILING) -D_USE_MATH_DEFINES
 CXXFLAGS  := $(CCFLAGS) $(CPP11_FLAGS)
 CCDFLAGS  := -Wall $(INC) $(CONFIG) -ggdb
 CXXDFLAGS := $(CCDFLAGS)
 
 # Place the location of GMP libraries here
-GMPLD     := -L$(GMP_LIB_DIR) -lgmpxx -lgmp
+GMPLD     := -L$(GMP_LIB_DIR) -lmpir
 # static version...
 #GMPLD     := $(GMP_LIB_DIR)/libgmpxx.a $(GMP_LIB_DIR)/libgmp.a
 
