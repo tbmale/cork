@@ -1,4 +1,0 @@
-C:/_work/cork/build/CMakeFiles/rebuild_cache.dir
-C:/_work/cork/build/CMakeFiles/edit_cache.dir
-C:/_work/cork/build/CMakeFiles/cork.dir
-C:/_work/cork/build/CMakeFiles/corktest.dir
