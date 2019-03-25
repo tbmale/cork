@@ -161,7 +161,7 @@ MAIN_DEBUG        := $(addprefix debug/,$(addsuffix .o,$(MAIN_SRC))) \
                      obj/isct/triangle.o
 
 LIB_TARGET_NAME   := cork
-
+LIB_MPIR_DIR := $(vpath libmpir.a $(prefix))
 # *********
 # * RULES *
 # *********------+
@@ -173,7 +173,7 @@ debug: lib/lib$(LIB_TARGET_NAME)debug.a includes
 
 lib/lib$(LIB_TARGET_NAME).a: $(OBJ)
 	@echo "Bundling $@"
-	@ar rcs $@ $(OBJ) libmpir.a
+	@ar rcs $@ $(OBJ) $(LIB_MPIR_DIR)
 
 lib/lib$(LIB_TARGET_NAME)debug.a: $(DEBUG)
 	@echo "Bundling $@"
