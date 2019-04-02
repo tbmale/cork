@@ -30,7 +30,7 @@
 using std::ifstream;
 using std::ofstream;
 using std::endl;
-
+using std::cerr;
 
 namespace Files {
 
@@ -43,17 +43,25 @@ int readOFF(string filename, FileMesh *data)
     
     ifstream in; // will close on exit from this read function
     in.open(filename.c_str());
-    if(!in) return 1;
+    if(!in){
+      cerr<< "file " << filename.c_str() << " not found";
+      return 1;
+    }
     
     // "OFF"
     string filetype;
     in >> filetype;
-    if(filetype != "OFF") return 1;
-    
+    if(filetype != "OFF"){
+      cerr<< "file " << filename.c_str() << " is not of type OFF";
+      return 1;
+    }
     // counts of things
     int numvertices, numfaces, numedges;
     in >> numvertices >> numfaces >> numedges;
-    if(!in) return 1;
+    if(!in){
+      cerr<< "file " << filename.c_str() << " bad numvertices, numfaces, numedges formatting";
+      return 1;
+    }
     data->vertices.resize(numvertices);
     data->triangles.resize(numfaces);
     
@@ -62,18 +70,24 @@ int readOFF(string filename, FileMesh *data)
         Vec3d &p = v.pos;
         in >> p.x >> p.y >> p.z;
     }
-    if(!in) return 1;
-    
+    if(!in){
+      cerr<< "file " << filename.c_str() << " bad vertex data";
+      return 1;
+    }
     // face data
     for(auto &tri : data->triangles) {
         int polysize;
         in >> polysize;
-        if(polysize != 3)   return 1;
-        
+        if(polysize != 3){
+          cerr<< "file " << filename.c_str() << " bad triangle size (not 3)";
+          return 1;
+        }
         in >> tri.a >> tri.b >> tri.c;
     }
-    if(!in) return 1;
-    
+    if(!in){
+      cerr<< "file " << filename.c_str() << " bad triangle formatting";
+      return 1;
+    }
     return 0;
 }
 
@@ -83,8 +97,10 @@ int writeOFF(string filename, FileMesh *data)
     
     ofstream out;
     out.open(filename.c_str());
-    if(!out) return 1;
-    
+    if(!out){
+      cerr<< "file " << filename.c_str() << " cold not be opened";
+      return 1;
+    }
     // "OFF"
     out << "OFF" << endl;
     
@@ -103,8 +119,10 @@ int writeOFF(string filename, FileMesh *data)
     for(const auto &tri : data->triangles) {
         out << "3 " << tri.a << ' ' << tri.b << ' ' << tri.c << endl;
     }
-    if(!out) return 1;
-    
+    if(!out){
+      cerr<< "file " << filename.c_str() << " could not be written";
+      return 1;
+    }
     return 0;
 }
 
