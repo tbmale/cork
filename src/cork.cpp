@@ -27,6 +27,7 @@
 
 #include "mesh.h"
 
+#include <cmath> 
 
 void freeCorkTriMesh(CorkTriMesh *mesh)
 {
@@ -181,7 +182,7 @@ bool isSolid(CorkTriMesh cmesh)
 {
     CorkMesh mesh;
     corkTriMesh2CorkMesh(cmesh, &mesh);
-    
+
     bool solid = true;
     
     if(mesh.isSelfIntersecting()) {
@@ -193,8 +194,47 @@ bool isSolid(CorkTriMesh cmesh)
         CORK_ERROR("isSolid() was given a non-closed mesh");
         solid = false;
     }
-    
+
     return solid;
+}
+
+     float SignedVolumeOfTriangle(Vec3<float> p1, Vec3<float> p2, Vec3<float> p3)
+     {
+         float v321 = p3.x * p2.y * p1.z;
+         float v231 = p2.x * p3.y * p1.z;
+         float v312 = p3.x * p1.y * p2.z;
+         float v132 = p1.x * p3.y * p2.z;
+         float v213 = p2.x * p1.y * p3.z;
+         float v123 = p1.x * p2.y * p3.z;
+         float res= (1.0f / 6.0f) * (-v321 + v231 + v312 - v132 - v213 + v123);
+         // printf("%f\n",res);
+         return res;
+     }
+
+float calculateVolume(void* cmesh)
+{
+    CorkTriMesh mesh=*reinterpret_cast< CorkTriMesh *>(cmesh);
+    //corkTriMesh2CorkMesh(*reinterpret_cast< CorkTriMesh *>(cmesh), &mesh);
+    float volume = 0;
+    float* verts = mesh.vertices;
+    std::vector<Vec3<float>> vertices(mesh.n_vertices);
+    for(uint i=0; i<mesh.n_vertices; i++) {
+        vertices[i].x=verts[3*i+0];
+        vertices[i].y=verts[3*i+1];
+        vertices[i].z=verts[3*i+2];
+    }
+    
+    for (int i = 0; i < mesh.n_triangles; i++)
+    {
+        Vec3<float> p1 = vertices[mesh.triangles[3*i+0]];
+        Vec3<float> p2 = vertices[mesh.triangles[3*i+1]];
+        Vec3<float> p3 = vertices[mesh.triangles[3*i+2]];
+        
+        //printf("a:%d,b:%d,c:%d\n",mesh.triangles[3*i+0],mesh.triangles[3*i+1],mesh.triangles[3*i+2]);
+        volume += SignedVolumeOfTriangle(p1, p2, p3);
+    }
+    // return std::abs(volume);
+    return volume;
 }
 
 void computeUnion(

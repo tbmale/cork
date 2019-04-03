@@ -44,7 +44,7 @@ int readOFF(string filename, FileMesh *data)
     ifstream in; // will close on exit from this read function
     in.open(filename.c_str());
     if(!in){
-      cerr<< "file " << filename.c_str() << " not found";
+      cerr<< "file " << filename.c_str() << " not found\n";
       return 1;
     }
     
@@ -52,14 +52,14 @@ int readOFF(string filename, FileMesh *data)
     string filetype;
     in >> filetype;
     if(filetype != "OFF"){
-      cerr<< "file " << filename.c_str() << " is not of type OFF";
+      cerr<< "file " << filename.c_str() << " is not of type OFF\n";
       return 1;
     }
     // counts of things
     int numvertices, numfaces, numedges;
     in >> numvertices >> numfaces >> numedges;
     if(!in){
-      cerr<< "file " << filename.c_str() << " bad numvertices, numfaces, numedges formatting";
+      cerr<< "file " << filename.c_str() << " bad numvertices, numfaces, numedges formatting\n";
       return 1;
     }
     data->vertices.resize(numvertices);
@@ -71,7 +71,7 @@ int readOFF(string filename, FileMesh *data)
         in >> p.x >> p.y >> p.z;
     }
     if(!in){
-      cerr<< "file " << filename.c_str() << " bad vertex data";
+      cerr<< "file " << filename.c_str() << " bad vertex data "<<in.tellg()<<"\n";
       return 1;
     }
     // face data
@@ -79,13 +79,13 @@ int readOFF(string filename, FileMesh *data)
         int polysize;
         in >> polysize;
         if(polysize != 3){
-          cerr<< "file " << filename.c_str() << " bad triangle size (not 3)";
+          cerr<< "file " << filename.c_str() << " bad triangle size (not 3)\n";
           return 1;
         }
-        in >> tri.a >> tri.b >> tri.c;
+          in >> tri.a >> tri.b >> tri.c;
     }
     if(!in){
-      cerr<< "file " << filename.c_str() << " bad triangle formatting";
+      cerr<< "file " << filename.c_str() << " bad triangle formatting\n";
       return 1;
     }
     return 0;
@@ -98,7 +98,7 @@ int writeOFF(string filename, FileMesh *data)
     ofstream out;
     out.open(filename.c_str());
     if(!out){
-      cerr<< "file " << filename.c_str() << " cold not be opened";
+      cerr<< "file " << filename.c_str() << " cold not be opened\n";
       return 1;
     }
     // "OFF"
@@ -120,7 +120,7 @@ int writeOFF(string filename, FileMesh *data)
         out << "3 " << tri.a << ' ' << tri.b << ' ' << tri.c << endl;
     }
     if(!out){
-      cerr<< "file " << filename.c_str() << " could not be written";
+      cerr<< "file " << filename.c_str() << " could not be written\n";
       return 1;
     }
     return 0;

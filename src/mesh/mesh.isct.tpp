@@ -1089,7 +1089,7 @@ bool Mesh<VertData,TriData>::IsctProblem::hasIntersections()
       }
       return true; // continue
     });
-    
+
     if(Empty3d::degeneracy_count > 0 || foundIsct) {
         std::cout << "This self-intersection might be spurious. "
                      "Degeneracies were detected." << std::endl;

@@ -169,8 +169,8 @@ LIB_MPIR_DIR := $(vpath libmpir.a $(prefix))
 # +--------------+
 all: lib/lib$(LIB_TARGET_NAME).a includes \
      bin/off2obj bin/cork
-debug: lib/lib$(LIB_TARGET_NAME)debug.a includes
-
+debug: lib/lib$(LIB_TARGET_NAME)debug.a includes \
+        debug/cork
 lib/lib$(LIB_TARGET_NAME).a: $(OBJ)
 	@echo "Bundling $@"
 	@ar rcs $@ $(OBJ) $(LIB_MPIR_DIR)
@@ -182,6 +182,10 @@ lib/lib$(LIB_TARGET_NAME)debug.a: $(DEBUG)
 bin/cork: $(MAIN_OBJ)
 	@echo "Linking cork command line tool"
 	@$(CXX) -o bin/cork $(MAIN_OBJ) -static -static-libgcc -static-libstdc++ -lpthread $(LINK)
+  
+debug/cork: $(MAIN_DEBUG)
+	@echo "Linking cork command line tool (DEBUG)"
+	@$(CXX) -o bin/cork $(MAIN_DEBUG) -static -static-libgcc -static-libstdc++ -lpthread  $(LINKD)
 
 bin/off2obj: obj/off2obj.o
 	@echo "Linking off2obj"

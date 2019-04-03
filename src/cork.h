@@ -52,6 +52,9 @@ void freeCorkTriMesh(CorkTriMesh *mesh);
 // This function will test whether or not a mesh is solid
 bool isSolid(CorkTriMesh mesh);
 
+// This function will calculate volume of a solid mesh
+float calculateVolume(void *mesh);
+
 // Boolean operations follow
 // result = A U B
 void computeUnion(CorkTriMesh in0, CorkTriMesh in1, CorkTriMesh *out);

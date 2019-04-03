@@ -63,6 +63,7 @@ void file2corktrimesh(
         (out->vertices)[3*i+1] = in.vertices[i].pos.y;
         (out->vertices)[3*i+2] = in.vertices[i].pos.z;
     }
+
 }
 
 void corktrimesh2file(
@@ -92,7 +93,6 @@ void loadMesh(string filename, CorkTriMesh *out)
         cerr << "Unable to load in " << filename << endl;
         exit(1);
     }
-    
     file2corktrimesh(filemesh, out);
 }
 void saveMesh(string filename, CorkTriMesh in)
@@ -217,15 +217,16 @@ genericBinaryOp(
         CorkTriMesh in0;
         CorkTriMesh in1;
         CorkTriMesh out;
-        
+
         if(args == end) { cerr << "too few args" << endl; exit(1); }
         loadMesh(*args, &in0);
+        
         args++;
         
         if(args == end) { cerr << "too few args" << endl; exit(1); }
         loadMesh(*args, &in1);
         args++;
-        
+
         binop(in0, in1, &out);
         
         if(args == end) { cerr << "too few args" << endl; exit(1); }
@@ -245,7 +246,6 @@ genericBinaryOp(
 int main(int argc, char *argv[])
 {
     initRand(); // that's useful
-    
     if(argc < 2) {
         cout << "Please type 'cork -help' for instructions" << endl;
         exit(0);
@@ -274,11 +274,29 @@ int main(int argc, char *argv[])
         if(args == end) { cerr << "too few args" << endl; exit(1); }
         string filename = *args;
         loadMesh(*args, &in);
-        args++;
-        
+        args++;        
         bool solid = isSolid(in);
+
         cout << "The mesh " << filename << " is: " << endl;
         cout << "    " << ((solid)? "SOLID" : "NOT SOLID") << endl;
+        
+        delete[] in.vertices;
+        delete[] in.triangles;
+    });
+    cmds.regCmd("volume",
+    "-volume in              Calculate the volume of a solid object.\n"
+    "                         (aka. watertight) (technically\n"
+    "                         solid == closed and non-self-intersecting)",
+    [](std::vector<string>::iterator &args,
+       const std::vector<string>::iterator &end) {
+        CorkTriMesh in;
+        if(args == end) { cerr << "too few args" << endl; exit(1); }
+        string filename = *args;
+        loadMesh(*args, &in);
+        args++;        
+        float volume = calculateVolume(&in);
+        printf("%f",volume);
+        //cout << "The mesh " << filename << " has: " << volume << " mm^3" << endl;
         
         delete[] in.vertices;
         delete[] in.triangles;

@@ -24,6 +24,9 @@
 // |    along with Cork.  If not, see <http://www.gnu.org/licenses/>.
 // +-------------------------------------------------------------------------
 #pragma once
+#include <iostream>
+using std::cout;
+using std::cerr;
 
 #include "iterPool.h"
 
@@ -242,15 +245,20 @@ void Mesh<VertData, TriData>::TopoCache::init()
     //  * Hook up Triangles and Vertices
     // building a structure to handle the edges as we go:
     std::vector< ShortVec<TopoEdgePrototype, 8> > edgeacc(mesh->verts.size());
+
     for(uint i=0; i<mesh->tris.size(); i++) {
         Tptr tri = tris.alloc(); // cache.tris.alloc()
         tri->ref = i;
         const Tri &ref_tri = mesh->tris[i];
-        
+
         // triangles <--> verts
         uint vids[3];
         for(uint k=0; k<3; k++) {
             uint vid = vids[k] = ref_tri.v[k];
+            if(vid>temp_verts.size()){
+              cerr<< "vertex index "<< vid << " is greater than max vertex index: " << temp_verts.size() <<"\n";
+              exit(-1);
+            }
             tri->verts[k] = temp_verts[vid];
             temp_verts[vid]->tris.push_back(tri);
         }
